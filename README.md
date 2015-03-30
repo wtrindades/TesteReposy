@@ -1,11 +1,6 @@
 
 # Documentação de como escrever um NASA CSS 
 
-O documento a seguir descreve um sensato guia de estilo para desenvolvimento
-CSS.  Não pretendo ser prescritivo e não quero impor as minhas preferências de
-estilo no código de outras pessoas. Entretanto, estas orientações incentivam
-fortemente o uso de existentes, comuns e sensatos padrões.
-
 Aqui segue uma documentação de escrita para desenvolvimento CSS.
 Fazendo de tudo para seguir os melhores padrões existentes e com a intenção de
 fazer um simples arquivo css se tornar uma obra de arte no desenvolvimento web.
