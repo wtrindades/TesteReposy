@@ -1,16 +1,19 @@
-# TesteReposy
-TesteMD
-# Princípios para escrever CSS de forma consistente e idiomática
+
+# Documentação de como escrever um NASA CSS 
 
 O documento a seguir descreve um sensato guia de estilo para desenvolvimento
 CSS.  Não pretendo ser prescritivo e não quero impor as minhas preferências de
 estilo no código de outras pessoas. Entretanto, estas orientações incentivam
 fortemente o uso de existentes, comuns e sensatos padrões.
 
+Aqui segue uma documentação de escrita para desenvolvimento CSS.
+Fazendo de tudo para seguir os melhores padrões existentes e com a intenção de
+fazer um simples arquivo css se tornar uma obra de arte no desenvolvimento web.
+
+> "A mente que se abre a uma nova idéia jamais voltará ao seu tamanho original." - Albert Einstein
+
 Esse é um documento vivo e novas ideias são sempre bem-vindas. Por favor
 contribua.
-
-[Idiomatic CSS em Inglês (Original)](https://github.com/necolas/idiomatic-css)
 
 
 ## Índice
@@ -23,6 +26,7 @@ contribua.
 6. [Exemplo prático](#example)
 7. [Organização](#organization)
 8. [Build e deploy](#build-and-deployment)
+9. [Otimização](#otimization)
 
 [Agradecimentos](#acknowledgements)
 
@@ -86,17 +90,11 @@ comentários acordado.
 #### exemplo com CSS:
 
 ```css
-/* ==========================================================================
-   Bloco de comentário de seção
-   ========================================================================== */
+/*====================================*\
+    Fonts
+\*====================================*/
 
-/* Bloco de comentário de sub-seção
-   ========================================================================== */
-
-/*
- * Bloco de comentário de grupo
- * Ideal para explicações em múltiplas linhas e documentação.
- */
+/* Comentário básico */
  
 /**
  * Breve descrição usando o estilo de formato de comentário Doxygen
@@ -115,25 +113,7 @@ comentários acordado.
  * seguir são Recuado por dois espaços.
  */
 
-/* Comentário básico */
-```
 
-#### exemplo com SCSS:
-
-```scss
-// ==========================================================================
-// Bloco de comentário de seção
-// ==========================================================================
-
-// Bloco de comentário de sub-seção
-// ==========================================================================
-
-//
-// Bloco de comentário de grupo
-// Ideal para explicações em múltiplas linhas e documentação.
-//
-
-// Comentário básico
 ```
 
 
@@ -421,10 +401,8 @@ fonte possa ser avaliada, testada, comprimida e versionada em preparação para
 uso em produção.  Para essa tarefa, o [grunt](https://github.com/cowboy/grunt)
 por Ben Alman é uma excelente ferramenta.
 
+<a name="otimization"></a>
+## 9. Otimização
 
-<a name="acknowledgements"></a>
-## Agradecimentos
+Por exemplo não colocar ponto e virgula no último elemento
 
-Obrigado a todos que contribuiram para
-[idiomatic.js](https://github.com/rwldrn/idiomatic.js). Foi uma fonte de
-inspiração, citações e diretrizes.
