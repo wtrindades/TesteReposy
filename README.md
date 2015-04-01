@@ -13,7 +13,7 @@ contribua.
 
 ## Índice
 
-1. [Princípios gerais](#general-principles)
+1. [Princípios](#principles)
 2. [Espaços em branco](#whitespace)
 3. [Comentários](#comments)
 4. [Formatação](#format)
@@ -26,18 +26,17 @@ contribua.
 [Agradecimentos](#acknowledgements)
 
 
-<a name="general-principles"></a>
-## 1. Princípios gerais
+<a name="principles"></a>
+## 1. Princípios
+> "Organização é o princípio de tudo, mantê-la significa competência." - Alfredo Valente Júnior
 
-> "Parte de ser um bom gestor de um projeto bem sucedido é perceber que
-> escrever código para si mesmo é uma Má Ideia™. Se milhares de pessoas estão
-> usando o seu código, então escreva-o com máxima clareza, não sob a sua
-> preferência pessoal de como ser esperto com a especificação." - Idan Gazit
-
-* Todo código em qualquer aplicação deve parecer como se tivesse sido escrito
-  por uma única pessoa, independentemente de quantas pessoas tenham contribuído.
-* Faça cumprir rigorosamente o estilo acordado.
-* Em caso de dúvida, utilizar padrões existentes e comuns.
+* Todo código deve parecer como se tivesse sido escrito
+  por uma única pessoa, mesmo tendo sido escrito por uma equipe.
+  Se dentro de sua equipe é possivel indentificar pelo código quem
+  o escreveu alguma coisa está errada.
+* O padrão proposto tem que ser cumprido senão de nada adianta seguir
+  qualquer padrão.
+* //Aqui ainda falta coisas a refletir
 
 
 <a name="whitespace"></a>
@@ -228,36 +227,6 @@ vários formatos que poderiam ser usados; um exemplo é mostrado abaixo.
 * _Onde permitido_, evite especificar unidades para valores-zero, por exemplo:
   `margin: 0`.
 
-### Pré-processadores: considerações de formatação adicionais
-
-Diferentes pré-processadores de CSS possuem diferentes características,
-funcionalidades e sintaxe. Suas convenções devem ser extendidas para acomodar
-as particularidades de qualquer pré-processador em uso. As seguintes diretrizes
-são em referência ao Sass.
-
-* Limite o aninhamento a 1 nível de profundidade. Reavalie qualquer aninhamento
-  que tenha mais de 2 níveis de profundidade. Isso impede que existam seletores
-  CSS muito específicos.
-* Evite um grande número de regras aninhadas. Quebre-os para quando a
-  legibilidade começar a ser afetada. Preferência por evitar aninhamentos que
-  se espalhem por mais de 20 linhas.
-* Sempre coloque as declarações `@extend` nas primeiras linhas de um bloco
-  declarativo.
-* Quando possível, agrupe declarações `@include` no topo de blocos
-  declarativos, depois de qualquer declaração `@extend`.
-* Considere funções customizadas para prefixos com `x-` ou qualquer namespace.
-  Isso ajuda a evitar qualquer potencial confusão na sua função com a função de
-  CSS nativo ou de colidir com funções de bibliotecas.
-
-```scss
-.selector-1 {
-    @extend .other-rule;
-    @include clearfix();
-    @include box-sizing(border-box);
-    width: x-grid-unit(1);
-    // other declarations
-}
-```
 
 <a name="naming"></a>
 ## 5. Nomeando
